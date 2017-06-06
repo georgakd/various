@@ -1,1 +1,1 @@
-# various
+# various simple C programs
