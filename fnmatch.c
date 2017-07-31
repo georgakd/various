@@ -1,3 +1,11 @@
+/*
+ * fnmatch.c: This program is actually a grep for an exact pattern in a file
+ * usage: fnmatch --pattern test filename (test is the pattern to be matched and filename the input file)
+ * 
+ * Copyright 2016 Dimitra Georgakaki
+ * 
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>

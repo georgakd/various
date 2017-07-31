@@ -1,3 +1,11 @@
+/*
+ * digits.c: This program counts the digits of a number
+ * 
+ * Copyright 2016 Dimitra Georgakaki
+ * 
+ */
+ 
+ 
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>

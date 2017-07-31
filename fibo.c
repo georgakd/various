@@ -1,3 +1,11 @@
+/*
+ * fibo.c: This program calculates fibonacci series sum
+ * 
+ * Copyright 2016 Dimitra Georgakaki
+ * 
+ */
+
+
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>

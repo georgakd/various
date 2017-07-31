@@ -1,3 +1,12 @@
+/*
+ * palindrome.c: This program finds the palindrome of a word
+ * 
+ * Copyright 2016 Dimitra Georgakaki
+ * 
+ */
+
+
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>

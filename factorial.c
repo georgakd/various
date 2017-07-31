@@ -1,3 +1,11 @@
+/*
+ * factorial.c: This program calculates the factorial of a number
+ * 
+ * Copyright 2016 Dimitra Georgakaki
+ * 
+ */
+
+
 #include <math.h>
 #include <stdio.h>
 #include <string.h>

@@ -1,3 +1,11 @@
+/*
+ * sum_integers.c: This program finds the sum of integers in different complexities
+ * 
+ * Copyright 2016 Dimitra Georgakaki
+ * 
+ */
+
+
 #include <math.h>
 #include <stdio.h>
 #include <string.h>

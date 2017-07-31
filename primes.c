@@ -1,3 +1,11 @@
+/*
+ * primes.c: This program finds prime numbers
+ * 
+ * Copyright 2016 Dimitra Georgakaki
+ * 
+ */
+
+
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>

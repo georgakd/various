@@ -1,3 +1,12 @@
+/*
+ * hello_world_multithreaded.c: This program uses pthreads for hello world
+ * 
+ * Copyright 2016 Dimitra Georgakaki
+ * 
+ */
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>

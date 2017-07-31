@@ -1,3 +1,11 @@
+/*
+ * reverse_array.c: This program reverses an array
+ * 
+ * Copyright 2016 Dimitra Georgakaki
+ * 
+ */
+
+
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>

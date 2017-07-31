@@ -1,4 +1,10 @@
-// C program to print all permutations with duplicates allowed
+/*
+ * permute.c: This program prints all permutations with duplicates allowed
+ * 
+ * Copyright 2016 Dimitra Georgakaki
+ * 
+ */
+
 #include <stdio.h>
 #include <string.h>
  
