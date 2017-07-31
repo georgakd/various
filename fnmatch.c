@@ -63,7 +63,8 @@ void fnmatch(char* file_arg, char* test_pattern) {
 			}		
 	    } //end for k
 	    
-	    if (k==strlen(test_pattern)) printf("%d\t%s",line_number,line);
+	    if (k==strlen(test_pattern)) 
+	    {printf("pattern found in line: %d\t%s",line_number,line);}
 	  
      } // end for j
    }      

@@ -1,6 +1,7 @@
 /*
- * bsearch.c: This program uses binary search algorithm to search for a key in a spreadsheet-like file.
- * usage: bsearch --key test filename (where test is the token under seach and filename the file)
+ * bsearch.c: This program uses binary search algorithm to search for a key in a spreadsheet-like file (e.g csv).
+ * First column represents the key and it must not be dublicate.
+ * usage: bsearch --key test filename (where test is the key to search and filename the file)
  * 
  * Copyright 2016 Dimitra Georgakaki
  * 
