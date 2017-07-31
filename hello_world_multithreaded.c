@@ -21,9 +21,12 @@ int main(int argc, char *argv[]){
 	long thread; //in case of 64-bit
 	pthread_t* thread_handles;
 	
-	//get number of threads from command line with strtol	
-	//thread_count=strtol(argv[1],NULL,10);
-	thread_count=atoi(argv[1]);
+	if (argc < 2) 
+    {    
+      printf("Give an int for number of threads. Example Usage: ./threads 10\n\n");
+      return EXIT_FAILURE;
+    }
+    else {thread_count=atoi(argv[1]);}	
 	
 	thread_handles=malloc(thread_count*sizeof(pthread_t));
 	
