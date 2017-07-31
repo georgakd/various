@@ -32,7 +32,13 @@ return result;
 int main(int argc, char *argv[]){
 
     int number,num_digits;
-	number=atoi(argv[1]);
+    
+    if (argc < 2) 
+    {    
+      printf("Give an int arg. Example Usage: ./digits 1000\n\n");
+      return EXIT_FAILURE;
+    }
+    else {number=atoi(argv[1]);}
 	num_digits=digits(number);
 
     printf("The number of digits for number %d is: %d\n",number,num_digits);

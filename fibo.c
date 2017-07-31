@@ -38,7 +38,13 @@ return (fibo(N-1)+fibo(N-2));
 int main(int argc, char *argv[]){
 
     int iterations,result,sum=0;
-	iterations=atoi(argv[1]);
+    
+    if (argc < 2) 
+    {    
+      printf("Give an int arg for fibo term. Example Usage: ./fibo 1000\n\n");
+      return EXIT_FAILURE;
+    }
+    else {iterations=atoi(argv[1]);}	
 	
 	for (int i=0;i<iterations;i++){
 	result=fibo(i);

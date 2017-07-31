@@ -25,8 +25,6 @@ int factorial(int N){
 		fact*=i;
 		
 		}
-	
-	
 	return fact;
 	}
 
@@ -35,9 +33,15 @@ int factorial(int N){
 int main(int argc,char **argv){
 
     int numbers, result;
-	numbers=atoi(argv[1]);
+    if (argc < 2) 
+    {    
+      printf("Give an int arg. Example Usage: ./factorial 1000\n\n");
+      return EXIT_FAILURE;
+    }
+    else {numbers=atoi(argv[1]);}
+	
 	result = factorial(numbers);
-	printf("The factorial of %d numbers is: %d\n",numbers,result);	
+	printf("The factorial of 1 to %d is: %d\n",numbers,result);	
 	
 	return 0;
 	}
