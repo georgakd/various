@@ -35,7 +35,9 @@ int main(int argc, char **argv)
             length++;            
         }
         rewind( fp );
-    }    
+    }  
+
+    fclose(fp);  
         
 //********** Read the file and store into a double array *************//
     double *x_array, *y_array;
@@ -46,21 +48,15 @@ int main(int argc, char **argv)
     int i = 0;
     fp=fopen("data.dat", "r");
 	if(fp != NULL) {
-        while(!feof(fp)) {
-			fgets(buffer,C_MAX_LENGTH,fp ); 
+        while( fgets(buffer,C_MAX_LENGTH,fp ) != NULL ) {
             sscanf(buffer, "%lf\t%lf", &x_array[i], &y_array[i]);
-            i++;
+            ++i;
         }
-        for(int i = 0; i < length; i++) {
-            printf("%.12lf\t%.12lf\n", x_array[i],y_array[i]);
-        }
+     //   for(int i = 0; i < length; i++) {
+     //       printf("%.12lf\t%.12lf\n", x_array[i],y_array[i]);
+     //   }
 	}			        
     fclose( fp );
-    
-    
-    
-    free(x_array);
-    free(y_array);   
     
     
 //*************** Linear interpolation *******************************//
@@ -76,15 +72,16 @@ int main(int argc, char **argv)
     x = ((double)rand()/(double)RAND_MAX);
     
     for (k=0;k<length;k++)   
-     {
-		 if (x >= k*step && x <= (k+1)*step)
-		     kfound = k+1;
-		 }
+    {
+	  if (x >= k*step && x <= (k+1)*step) {kfound = k+1;}
+	}
    
     //**Calculate y**//
     
-      y = y_array[kfound] + (y_array[kfound+1]-y_array[kfound])*((x-x_array[kfound])/(x_array[kfound+1]-x_array[kfound]));
-      printf("%d %g %g\n", kfound, x, y);
+    y = y_array[kfound] + (y_array[kfound+1]-y_array[kfound])*((x-x_array[kfound])/(x_array[kfound+1]-x_array[kfound]));
+    printf("Position: %d x: %g y: %g\n", kfound, x, y);
     
+    free(x_array);free(y_array);
+
 	return 0;
 }
