@@ -34,7 +34,13 @@ for (int i=0;i<length;i++)
 int main(int argc, char *argv[]){
     
     int N;
-    N=atoi(argv[1]);
+    if (argc < 2) 
+    {    
+      printf("Give an int arg. that represents the array length. Example Usage: ./reverse 10\n\n");
+      return EXIT_FAILURE;
+    }
+    else {N=atoi(argv[1]);}
+    
     int * ar1 = (int *) malloc (N*sizeof (int));
     int * ar2 = (int *) malloc (N*sizeof (int));
     

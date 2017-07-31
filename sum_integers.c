@@ -52,7 +52,13 @@ int sum_int_simple(int N){
 int main(int argc, char **argv){
 	
 	int numbers, result;
-	numbers=atoi(argv[1]);
+	if (argc < 2) 
+    {    
+      printf("Give an int arg. Example Usage: ./sum 1000\n\n");
+      return EXIT_FAILURE;
+    }
+    else {numbers=atoi(argv[1]);}
+	
 	//result = sum_int(numbers);
 	//result = sum_int_complex(numbers);
 	result = sum_int_simple(numbers);

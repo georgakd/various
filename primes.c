@@ -34,7 +34,13 @@ int divisors(int N){
 int main(int argc, char *argv[]){
     
     int N,result;
-    N=atoi(argv[1]);
+    if (argc < 2) 
+    {    
+      printf("Give an int arg. and examine if it is a prime. Example Usage: ./primes 1000\n\n");
+      return EXIT_FAILURE;
+    }
+    else { N=atoi(argv[1]); }
+   
     result=divisors(N);
     
     if (result == 2)
