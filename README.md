@@ -1,1 +1,1 @@
-# various simple C programs
+# various C/C++ programs
